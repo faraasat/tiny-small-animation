@@ -1,0 +1,44 @@
+.text_animated {
+  background: linear-gradient(
+    to right,
+    #00ff90,
+    #00ff00,
+    #ffee00,
+    #ff7200,
+    #ff00c8,
+    #ff009d,
+    #00d7fd,
+    #008cdd,
+    #00ff90,
+    #00ff00,
+    #ffee00,
+    #ff7200,
+    #ff00c8,
+    #ff009d,
+    #00d7fd,
+    #008cdd
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 16s linear infinite;
+  background-size: 130% 100%;
+  animation-direction: alternate;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rainbow_animation {
+  0% {
+    background-position: 0 90%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0 90%;
+  }
+}
