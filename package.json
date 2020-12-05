@@ -16,6 +16,7 @@
     "react-rainbow-text": "^1.0.3",
     "react-scripts": "4.0.1",
     "react-toastify": "^6.1.0",
+    "sweetalert2": "^10.11.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
