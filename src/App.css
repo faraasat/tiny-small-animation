@@ -8,15 +8,3 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-::-webkit-scrollbar-track {
-  background: rgb(75, 6, 193);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(155, 99, 252);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(138, 71, 253);
-}
