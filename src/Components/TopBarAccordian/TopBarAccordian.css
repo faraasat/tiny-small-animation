@@ -1,0 +1,7 @@
+.char-active {
+  transform: translateY(-9%);
+}
+
+.char-active > div > * {
+  border: 3px solid white;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import MuiAccordion from "@material-ui/core/Accordion";
 import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
@@ -15,6 +15,8 @@ import { ReactComponent as CorporateIcon } from "../../assets/corporate.svg";
 import { ReactComponent as TechnologyIcon } from "../../assets/technology.svg";
 import { ReactComponent as LuxuryIcon } from "../../assets/luxury.svg";
 import { ReactComponent as EntertainmentIcon } from "../../assets/entertainment.svg";
+import { rubberBand } from "@wellyshen/use-web-animations";
+import "./TopBarAccordian.css";
 
 const Accordion = withStyles({
   root: {
@@ -88,13 +90,10 @@ const useStyles = makeStyles((theme) => ({
   gridProp: {
     cursor: "pointer",
     "&:hover": {
-      transform: "translateY(-15px)",
+      transform: "translateY(-16%)",
       "& > div > *": {
-        border: "2px solid black",
+        border: "3px solid black",
       },
-    },
-    "&:active": {
-      transform: "translateY(-9px)",
     },
   },
 }));
@@ -112,12 +111,33 @@ const handleIconClick = () => {
   );
 };
 
-export default function CustomizedAccordions() {
+function usePrevious(value) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value.current;
+  });
+  return ref.current;
+}
+
+export default function TopBarAccordian() {
+  const community = useRef(null);
+  const technology = useRef(null);
+  const corporate = useRef(null);
+  const luxury = useRef(null);
+  const entertainment = useRef(null);
   const [expanded, setExpanded] = React.useState(null);
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
   const classes = useStyles();
+  const [active, setActive] = useState(technology);
+  const preVal = usePrevious(active);
+
+  useEffect(() => {
+    preVal?.parentElement?.classList?.remove("char-active");
+    active.current.parentElement.classList.add("char-active");
+    active.current.animate(rubberBand.keyframes, rubberBand.timing);
+  }, [active, preVal]);
 
   return (
     <div>
@@ -149,18 +169,25 @@ export default function CustomizedAccordions() {
           <Container maxWidth="md">
             <Grid item xs={12}>
               <Grid container justify="center" spacing={2}>
-                <Grid item className={classes.gridProp}>
-                  <div>
+                <Grid
+                  item
+                  className={classes.gridProp}
+                  onMouseDown={() => setActive(community)}
+                >
+                  <div ref={community}>
                     <CommunityIcon
                       className={classes.gridIcon}
                       style={{ backgroundColor: "rgb(74,195,174)" }}
-                      id="comm"
                     />
                   </div>
                   <Typography className={classes.typo}>Community</Typography>
                 </Grid>
-                <Grid item className={classes.gridProp}>
-                  <div>
+                <Grid
+                  item
+                  className={classes.gridProp}
+                  onMouseDown={() => setActive(corporate)}
+                >
+                  <div ref={corporate}>
                     <CorporateIcon
                       className={classes.gridIcon}
                       style={{ backgroundColor: "rgb(59,101,243)" }}
@@ -168,8 +195,12 @@ export default function CustomizedAccordions() {
                   </div>
                   <Typography className={classes.typo}>Corporate</Typography>
                 </Grid>
-                <Grid item className={classes.gridProp}>
-                  <div>
+                <Grid
+                  item
+                  className={classes.gridProp}
+                  onMouseDown={() => setActive(technology)}
+                >
+                  <div ref={technology}>
                     <TechnologyIcon
                       className={classes.gridIcon}
                       style={{ backgroundColor: "rgb(255,28,244)" }}
@@ -177,8 +208,12 @@ export default function CustomizedAccordions() {
                   </div>
                   <Typography className={classes.typo}>Technology</Typography>
                 </Grid>
-                <Grid item className={classes.gridProp}>
-                  <div>
+                <Grid
+                  item
+                  className={classes.gridProp}
+                  onMouseDown={() => setActive(luxury)}
+                >
+                  <div ref={luxury}>
                     <LuxuryIcon
                       className={classes.gridIcon}
                       style={{ backgroundColor: "rgb(255,227,177)" }}
@@ -186,8 +221,12 @@ export default function CustomizedAccordions() {
                   </div>
                   <Typography className={classes.typo}>Luxury</Typography>
                 </Grid>
-                <Grid item className={classes.gridProp}>
-                  <div>
+                <Grid
+                  item
+                  className={classes.gridProp}
+                  onMouseDown={() => setActive(entertainment)}
+                >
+                  <div ref={entertainment}>
                     <EntertainmentIcon
                       className={classes.gridIcon}
                       style={{ backgroundColor: "rgb(255,49,55)" }}
