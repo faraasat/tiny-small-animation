@@ -1,0 +1,19 @@
+.myCustomButton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    transition: all 5s ease 0;
+}
+
+.myCustomButton:hover {
+    box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,19 @@
+.item-listing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  left: -5;
+  width: 35vw;
+}
+
+.item-listing > div {
+  font-size: 1.01vw !important;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.6vw;
+}
+
+.item-listing > div > span {
+  padding-right: 10px;
+  text-align: center;
+}

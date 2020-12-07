@@ -7,9 +7,12 @@ import { DataContext } from "../../data/data.context";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    position: "sticky",
   },
   appBarStyle: {
     minHeight: 60,
+    width: "100%",
+    top: 0,
   },
 }));
 
@@ -23,10 +26,10 @@ export default function TopBar() {
   }, [data]);
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.appBarStyle} ref={ref}>
-        <TopBarAccordian />
-      </AppBar>
-    </div>
+    // <div className={classes.root}>
+    <AppBar position="sticky" className={classes.appBarStyle} ref={ref}>
+      <TopBarAccordian />
+    </AppBar>
+    /* </div> */
   );
 }

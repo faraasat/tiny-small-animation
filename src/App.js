@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./App.css";
-import { TopBar } from "./listing";
+import { TopBar, Header, BodyComponent } from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StartAlert from "./Utils/StartAlert";
@@ -29,127 +29,9 @@ function App() {
   return (
     <div>
       <TopBar />
+      <Header />
+      <BodyComponent />
       <ToastContainer />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus
-        tempora doloremque neque a quas, praesentium quibusdam libero quisquam
-        eos dolor animi, voluptates consectetur debitis, repellat vel incidunt?
-        Nobis, ipsam!
-      </p>
       <React.Fragment>
         <GlobalStyle
           sliderTop={data?.sliderTop}
