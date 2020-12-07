@@ -1,0 +1,20 @@
+.nathan-avatar {
+  border-radius: 100%;
+  border-top-color: rgb(255, 255, 255);
+  border-top-style: double;
+  border-top-width: 10px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: double;
+  border-right-width: 10px;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-style: double;
+  border-bottom-width: 10px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: double;
+  border-left-width: 10px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}

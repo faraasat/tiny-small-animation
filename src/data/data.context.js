@@ -17,6 +17,10 @@ const initialState = {
     "Your website is a dialogue with your audience. I capture the essence of your business and communicate it clearly. Carefully considered writing and SEO best practices allow me to craft the perfect user journey online. Let me draw the map that guides users every step of the way from discovery, to consideration, to conversion.",
   serviceMsg3:
     "Give your business a competitive edge with powerful content that can be targeted to any segment of your audience. No matter how large or complex your project, my custom-built solutions including articles, eDMs, and case studies will help you implement a plan that maximizes your business’s online exposure.",
+  aboutMsg1:
+    "My copywriting and UX writing draws on abilities developed in the psychological sciences.",
+  aboutMsg2:
+    "Expertise in visual perception, behavioral motivation, and decision-making allows me to engineer words that convert customers and guide users.",
 };
 export const DataContext = createContext(initialState);
 
@@ -38,6 +42,8 @@ export function DataContextProvider({ children }) {
         serviceMsg1: obj?.serviceMsg1,
         serviceMsg2: obj?.serviceMsg2,
         serviceMsg3: obj?.serviceMsg3,
+        aboutMsg1: obj?.aboutMsg1,
+        aboutMsg2: obj?.aboutMsg2,
       },
     });
   }

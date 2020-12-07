@@ -16,13 +16,14 @@ export default function BodyComponent() {
         xs={12}
         style={{
           width: "100%",
-          position: "absolute",
-          top: "51.9vw",
-          backgroundImage: `linear-gradient(to right, ${data?.color2}, ${data?.color1} 65%)`,
+          position: "relative",
+          top: "47.9vw",
+          backgroundImage: `linear-gradient(to right, ${data?.color2} -10%, ${data?.color1})`,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
           minHeight: "105vw",
+          maxHeight: "165vw",
         }}
       >
         <Container maxWidth="lg" spacing={8}>

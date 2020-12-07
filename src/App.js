@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./App.css";
-import { TopBar, Header, BodyComponent } from "./listing";
+import { TopBar, Header, ServicesComponent, AboutComponent } from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StartAlert from "./Utils/StartAlert";
@@ -30,7 +30,8 @@ function App() {
     <div>
       <TopBar />
       <Header />
-      <BodyComponent />
+      <ServicesComponent />
+      <AboutComponent />
       <ToastContainer />
       <React.Fragment>
         <GlobalStyle
