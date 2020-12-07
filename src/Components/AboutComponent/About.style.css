@@ -18,3 +18,14 @@
   border-image-outset: initial;
   border-image-repeat: initial;
 }
+
+.about-text {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 1.25vw !important;
+  margin-block-start: 1em !important;
+  margin-block-end: 2em !important;
+  line-height: 1.1 !important;
+  color: white;
+  letter-spacing: 0 !important;
+}

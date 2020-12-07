@@ -62,38 +62,32 @@ export default function AboutComponent() {
               </Container>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-              <Typography
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  fontWeight: "300",
-                  fontSize: "1.8vw",
-                  marginBlockStart: "0.8em",
-                  marginBlockEnd: 50,
-                  lineHeight: 0.9,
-                  color: "white",
-                  backgroundColor: data?.color1,
-                  filter: "brightness(75%)",
-                  display: "inline-block",
-                  boxShadow: "1px 16px 20px rgba(0, 0, 0, 0.17)",
-                  padding: "10px 40px",
-                }}
-              >
-                About
-              </Typography>
-              <Typography
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  fontWeight: "300",
-                  fontSize: "1.15vw",
-                  padding: 0,
-                  margin: 0,
-                  lineHeight: 1.05,
-                  color: "white",
-                  letterSpacing: 0,
-                }}
-              >
-                {data?.serviceMsg1}
-              </Typography>
+              <Container>
+                <Typography
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: "300",
+                    fontSize: "1.8vw",
+                    marginBlockStart: "0.8em",
+                    marginBlockEnd: "1em",
+                    lineHeight: 0.9,
+                    color: "white",
+                    backgroundColor: data?.color1,
+                    filter: "brightness(75%)",
+                    display: "inline-block",
+                    boxShadow: "1px 16px 20px rgba(0, 0, 0, 0.17)",
+                    padding: "10px 40px",
+                  }}
+                >
+                  About
+                </Typography>
+                <Typography className="about-text">
+                  {data?.aboutMsg1}
+                </Typography>
+                <Typography className="about-text">
+                  {data?.aboutMsg2}
+                </Typography>
+              </Container>
             </Grid>
           </Grid>
         </Container>
