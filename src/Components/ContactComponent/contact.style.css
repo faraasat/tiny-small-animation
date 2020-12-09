@@ -1,0 +1,9 @@
+.contact-msg-class:hover .contact-mail-icon {
+  transform: scale(1.06);
+}
+
+.contact-msg-class:hover .contact-mail-link {
+  text-decoration: none;
+  background-color: rgba(73, 5, 58, 0.767);
+  padding: 10px;
+}

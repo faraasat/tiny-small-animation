@@ -9,6 +9,7 @@ import {
   CaseStudiesComponent,
   BlogComponent,
   ReviewSectionComponent,
+  ContactComponent,
 } from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -45,6 +46,7 @@ function App() {
       <CaseStudiesComponent />
       <BlogComponent />
       <ReviewSectionComponent />
+      <ContactComponent />
       <ToastContainer />
       <React.Fragment>
         <GlobalStyle

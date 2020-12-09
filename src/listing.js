@@ -13,3 +13,4 @@ export { default as CaseStudyCardComponent } from "./Components/CaseStudyCards/c
 export { default as BlogComponent } from "./Components/BlogComponent/blog.component";
 export { default as ReviewSectionComponent } from "./Components/ReviewsSection/reviews-section.component";
 export { default as ReviewSectionCardComponent } from "./Components/ReviewSectionCard/review-section-card.component";
+export { default as ContactComponent } from "./Components/ContactComponent/contact.component";
