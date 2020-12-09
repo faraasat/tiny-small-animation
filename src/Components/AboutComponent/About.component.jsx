@@ -16,7 +16,7 @@ export default function AboutComponent() {
           width: "100%",
           position: "relative",
           top: "47.9vw",
-          backgroundImage: `linear-gradient(to right, ${data?.color1} -20%, ${data?.color2})`,
+          backgroundImage: `linear-gradient(to right, ${data?.avatarData?.color1}, ${data?.avatarData?.color2} 140%)`,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
@@ -72,7 +72,7 @@ export default function AboutComponent() {
                     marginBlockEnd: "1em",
                     lineHeight: 0.9,
                     color: "white",
-                    backgroundColor: data?.color1,
+                    backgroundColor: data?.avatarData?.color1,
                     filter: "brightness(75%)",
                     display: "inline-block",
                     boxShadow: "1px 16px 20px rgba(0, 0, 0, 0.17)",
@@ -82,10 +82,10 @@ export default function AboutComponent() {
                   About
                 </Typography>
                 <Typography className="about-text">
-                  {data?.aboutMsg1}
+                  {data?.avatarData?.aboutMsg1}
                 </Typography>
                 <Typography className="about-text">
-                  {data?.aboutMsg2}
+                  {data?.avatarData?.aboutMsg2}
                 </Typography>
               </Container>
             </Grid>

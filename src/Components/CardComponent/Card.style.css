@@ -1,0 +1,15 @@
+.card-component-card {
+  border-radius: 0px;
+  box-shadow: 16px 20px 20px rgba(0, 0, 0, 0.18);
+  max-width: 340px;
+  min-height: 450px;
+}
+
+.card-component-card:hover {
+  transform: scale(1.03);
+  transition: all 400ms ease-out;
+}
+
+.card-component-card > * {
+  border-radius: 0px;
+}

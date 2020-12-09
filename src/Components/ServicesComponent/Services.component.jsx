@@ -18,7 +18,7 @@ export default function BodyComponent() {
           width: "100%",
           position: "relative",
           top: "47.9vw",
-          backgroundImage: `linear-gradient(to right, ${data?.color2} -10%, ${data?.color1})`,
+          backgroundImage: `linear-gradient(to right, ${data?.avatarData?.color2} -10%, ${data?.avatarData?.color1})`,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
@@ -70,7 +70,7 @@ export default function BodyComponent() {
                   letterSpacing: 0,
                 }}
               >
-                {data?.serviceMsg1}
+                {data?.avatarData?.serviceMsg1}
               </Typography>
               <Grid
                 container
@@ -147,7 +147,7 @@ export default function BodyComponent() {
                   letterSpacing: 0,
                 }}
               >
-                {data?.serviceMsg2}
+                {data?.avatarData?.serviceMsg2}
               </Typography>
               <Grid
                 container
@@ -238,7 +238,7 @@ export default function BodyComponent() {
                   letterSpacing: 0,
                 }}
               >
-                {data?.serviceMsg3}
+                {data?.avatarData?.serviceMsg3}
               </Typography>
               <Grid
                 container

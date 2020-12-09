@@ -22,7 +22,7 @@ export default function TopBar() {
   const ref = useRef(null);
 
   useEffect(() => {
-    ref.current.style.backgroundImage = `linear-gradient(90deg, ${data?.color1}, ${data?.color2})`;
+    ref.current.style.backgroundImage = `linear-gradient(90deg, ${data?.avatarData?.color1}, ${data?.avatarData?.color2})`;
   }, [data]);
 
   return (

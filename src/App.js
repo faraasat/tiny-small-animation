@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./App.css";
-import { TopBar, Header, ServicesComponent, AboutComponent } from "./listing";
+import { TopBar, Header, ServicesComponent, AboutComponent, SamplesComponent } from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StartAlert from "./Utils/StartAlert";
@@ -32,11 +32,12 @@ function App() {
       <Header />
       <ServicesComponent />
       <AboutComponent />
+      <SamplesComponent />
       <ToastContainer />
       <React.Fragment>
         <GlobalStyle
-          sliderTop={data?.sliderTop}
-          sliderBottom={data?.sliderBottom}
+          sliderTop={data?.avatarData?.sliderTop}
+          sliderBottom={data?.avatarData?.sliderBottom}
         />
       </React.Fragment>
     </div>

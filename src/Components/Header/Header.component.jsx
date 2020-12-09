@@ -10,12 +10,12 @@ import useWebAnimations, { flash } from "@wellyshen/use-web-animations";
 export default function Header() {
   const { data } = useContext(DataContext);
   const colors = { color1: null, color2: null };
-  if (data?.id === "luxu" || data?.id === "comm") {
-    colors.color1 = data?.color1;
-    colors.color2 = data?.color2;
+  if (data?.avatarData?.id === "luxu" || data?.avatarData?.id === "comm") {
+    colors.color1 = data?.avatarData?.color1;
+    colors.color2 = data?.avatarData?.color2;
   } else {
-    colors.color1 = data?.color2;
-    colors.color2 = data?.color1;
+    colors.color1 = data?.avatarData?.color2;
+    colors.color2 = data?.avatarData?.color1;
   }
 
   const light = useWebAnimations({
@@ -121,11 +121,11 @@ export default function Header() {
                     transform: "ScaleY(1.05)",
                   }}
                 >
-                  {data?.mainLine}
+                  {data?.avatarData?.mainLine}
                 </Typography>
                 <CustomButton
-                  btnColor1={data?.btnColor2}
-                  btnColor2={data?.btnColor1}
+                  btnColor1={data?.avatarData?.btnColor2}
+                  btnColor2={data?.avatarData?.btnColor1}
                 >
                   Send a Message
                 </CustomButton>
