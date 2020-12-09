@@ -14,9 +14,6 @@ export default function CaseStudyCardComponent({
       <div className="case-study-card" style={style}>
         <div className="case-study-card-overlay">
           <div className="case-study-card-inner">
-            <Typography className="case-study-card-big-head">
-              {bigHead} <span>{smallHead}</span>
-            </Typography>
             <Typography className="case-study-card-head">{head}</Typography>
             <Typography className="case-study-card-sub-head">
               {subHead}

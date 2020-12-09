@@ -41,21 +41,13 @@
   font-weight: 500;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
+  width: 90%;
 }
 
 .case-study-card-sub-head {
-    text-align: center;
-    font-size: 16px !important;
-    font-weight: 300 !important;
-    font-style: italic !important;
-    margin-top: 20px !important;
-}
-
-.case-study-card-big-head {
   text-align: center;
-  font-size: 22px !important;
-  font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  width: 85%;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+  margin-top: 20px !important;
 }

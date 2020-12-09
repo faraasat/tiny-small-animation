@@ -10,3 +10,4 @@ export { default as CardComponent } from "./Components/CardComponent/Card.compon
 export { default as SamplesComponent } from "./Components/SamplesSection/Samples.component";
 export { default as CaseStudiesComponent } from "./Components/CaseStudiesSection/case-studies.component";
 export { default as CaseStudyCardComponent } from "./Components/CaseStudyCards/case-study-card.component";
+export { default as BlogComponent } from "./Components/BlogComponent/blog.component";
