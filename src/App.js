@@ -10,6 +10,7 @@ import {
   BlogComponent,
   ReviewSectionComponent,
   ContactComponent,
+  Footer,
 } from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -47,6 +48,7 @@ function App() {
       <BlogComponent />
       <ReviewSectionComponent />
       <ContactComponent />
+      <Footer />
       <ToastContainer />
       <React.Fragment>
         <GlobalStyle

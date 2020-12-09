@@ -14,3 +14,4 @@ export { default as BlogComponent } from "./Components/BlogComponent/blog.compon
 export { default as ReviewSectionComponent } from "./Components/ReviewsSection/reviews-section.component";
 export { default as ReviewSectionCardComponent } from "./Components/ReviewSectionCard/review-section-card.component";
 export { default as ContactComponent } from "./Components/ContactComponent/contact.component";
+export { default as Footer } from "./Components/Footer/footer.component";
