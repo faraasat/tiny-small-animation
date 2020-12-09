@@ -8,3 +8,5 @@ export { default as AboutComponent } from "./Components/AboutComponent/About.com
 export { default as AvatarEmojisComponent } from "./Components/AvatarEmojis/AvatarEmojis.component";
 export { default as CardComponent } from "./Components/CardComponent/Card.component";
 export { default as SamplesComponent } from "./Components/SamplesSection/Samples.component";
+export { default as CaseStudiesComponent } from "./Components/CaseStudiesSection/case-studies.component";
+export { default as CaseStudyCardComponent } from "./Components/CaseStudyCards/case-study-card.component";

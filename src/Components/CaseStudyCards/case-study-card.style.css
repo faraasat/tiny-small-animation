@@ -1,0 +1,61 @@
+.case-study-card-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.case-study-card {
+  position: relative;
+  height: 25vw;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.case-study-card:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03) translate3d(0, 0, 0);
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.2, 1);
+}
+
+.case-study-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+}
+
+.case-study-card-head {
+  text-align: center;
+  font-size: 22px !important;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.case-study-card-sub-head {
+    text-align: center;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    margin-top: 20px !important;
+}
+
+.case-study-card-big-head {
+  text-align: center;
+  font-size: 22px !important;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 85%;
+}

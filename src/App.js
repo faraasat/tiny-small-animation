@@ -1,6 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import "./App.css";
-import { TopBar, Header, ServicesComponent, AboutComponent, SamplesComponent } from "./listing";
+import {
+  TopBar,
+  Header,
+  ServicesComponent,
+  AboutComponent,
+  SamplesComponent,
+  CaseStudiesComponent,
+} from "./listing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StartAlert from "./Utils/StartAlert";
@@ -33,6 +40,7 @@ function App() {
       <ServicesComponent />
       <AboutComponent />
       <SamplesComponent />
+      <CaseStudiesComponent />
       <ToastContainer />
       <React.Fragment>
         <GlobalStyle
