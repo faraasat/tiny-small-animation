@@ -43,13 +43,19 @@ export default function Header() {
   });
 
   return (
-    <div>
+    <div
+      style={{
+        height: "auto !important",
+        margin: "0 !important",
+      }}
+    >
       <Grid
         item
         xs={12}
         style={{
           width: "100%",
           position: "absolute",
+          margin: "0 !important",
           backgroundImage: `radial-gradient(closest-side at 70% 55%, ${colors.color1} 0%, ${colors.color2} 210%)`,
         }}
       >
@@ -58,9 +64,9 @@ export default function Header() {
             container
             style={{
               minHeight: "50vw",
+              margin: "0 !important",
               alignContent: "center",
             }}
-            spacing={4}
           >
             <Grid
               item
@@ -69,9 +75,10 @@ export default function Header() {
               xl={5}
               style={{
                 width: "38%",
+                margin: "0 !important",
                 position: "absolute",
                 top: "13%",
-                left: "10.7vw",
+                left: "11.5vw",
               }}
             >
               <Container>
@@ -82,7 +89,7 @@ export default function Header() {
                     fontSize: "6.5vw",
                     padding: 0,
                     margin: 0,
-                    marginBlockStart: 0,
+                    marginBlockStart: '0.1em',
                     marginBlockEnd: 0,
                     lineHeight: 0.9,
                     color: "white",
@@ -124,6 +131,7 @@ export default function Header() {
                   {data?.avatarData?.mainLine}
                 </Typography>
                 <CustomButton
+                  style={{ fontSize: "1.1vw" }}
                   btnColor1={data?.avatarData?.btnColor2}
                   btnColor2={data?.avatarData?.btnColor1}
                 >
