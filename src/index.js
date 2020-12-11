@@ -12,7 +12,9 @@ import { DataContextProvider } from "./data/data.context";
 ReactDOM.render(
   <React.StrictMode>
     <DataContextProvider>
-      <App hideLoader={hideLoader} showLoader={showLoader} />
+      <App
+      // hideLoader={hideLoader} showLoader={showLoader}
+      />
     </DataContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
